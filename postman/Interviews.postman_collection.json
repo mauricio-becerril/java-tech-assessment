@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "a8f0a94f-d071-4523-8407-faba9c7696f7",
+		"name": "Interviews",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-path}}/persons",
+					"host": [
+						"{{base-path}}"
+					],
+					"path": [
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/persons/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-path}}/persons/1",
+					"host": [
+						"{{base-path}}"
+					],
+					"path": [
+						"persons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/persons/query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base-path}}/persons/query?name=Mauricio",
+					"host": [
+						"{{base-path}}"
+					],
+					"path": [
+						"persons",
+						"query"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mauricio"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/persons",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mauricio\",\r\n    \"email\": \"mauricio@domain.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-path}}/persons",
+					"host": [
+						"{{base-path}}"
+					],
+					"path": [
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/persons/{id}",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Andrea\",\r\n    \"email\": \"andrea@domain.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{base-path}}/persons/1",
+					"host": [
+						"{{base-path}}"
+					],
+					"path": [
+						"persons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/persons/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base-path}}/persons/5",
+					"host": [
+						"{{base-path}}"
+					],
+					"path": [
+						"persons",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base-path",
+			"value": "http://localhost:8080",
+			"type": "default"
+		}
+	]
+}

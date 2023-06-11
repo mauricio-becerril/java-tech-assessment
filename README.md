@@ -1,2 +1,3 @@
 # java-tech-assessment
-simple project to test java &amp; spring knowdlege
+
+Simple project to test technical level in Java & Spring Boot
