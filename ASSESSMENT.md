@@ -1,6 +1,6 @@
 # Java Assessment
 
-**Use `app-diagram.png` as reference**
+![Application Diagram](app-diagram.PNG "Application Diagram")
 NOTE: There may be places where 
 
 1. Implement your changes in a new branch (branch off from `main`)
