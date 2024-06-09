@@ -1,0 +1,130 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Interviews",
+    "collectionId": "a7dee143-3393-4266-8bc8-2b579650227d",
+    "dateExported": "2024-06-09T04:52:32.084Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "20c11d63-c15e-4022-9451-33e4b08a12d2",
+            "colId": "a7dee143-3393-4266-8bc8-2b579650227d",
+            "containerId": "",
+            "name": "/persons",
+            "url": "{{base-path}}/persons",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-06-09T04:05:05.843Z",
+            "modified": "2024-06-09T04:05:05.843Z",
+            "headers": []
+        },
+        {
+            "_id": "7aedb9f7-aef9-487e-93cd-ae04a8eae55f",
+            "colId": "a7dee143-3393-4266-8bc8-2b579650227d",
+            "containerId": "",
+            "name": "/persons",
+            "url": "{{base-path}}/persons",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-06-09T04:05:05.847Z",
+            "modified": "2024-06-09T04:45:57.121Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Pedro\",\n    \"email\": \"pedro@domain.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f7293eca-7e28-464a-aec3-1de3013c8e66",
+            "colId": "a7dee143-3393-4266-8bc8-2b579650227d",
+            "containerId": "",
+            "name": "/persons/{id}",
+            "url": "{{base-path}}/persons/4",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-06-09T04:05:05.845Z",
+            "modified": "2024-06-09T04:46:09.874Z",
+            "headers": []
+        },
+        {
+            "_id": "19b4dcdd-c12f-40cf-9c7f-a968beaa219c",
+            "colId": "a7dee143-3393-4266-8bc8-2b579650227d",
+            "containerId": "",
+            "name": "/persons/query",
+            "url": "{{base-path}}/persons/query?name=Mauricio",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-06-09T04:05:05.846Z",
+            "modified": "2024-06-09T04:09:19.705Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "Mauricio",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "358680a2-52e5-42f2-b590-aea2473c5308",
+            "colId": "a7dee143-3393-4266-8bc8-2b579650227d",
+            "containerId": "",
+            "name": "/persons/{id}",
+            "url": "{{base-path}}/persons/5",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2024-06-09T04:05:05.848Z",
+            "modified": "2024-06-09T04:48:08.099Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Lupe\",\n    \"email\": \"lupe@domain.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9b5d9f9c-37e6-41c7-b0aa-9c65d7e0930e",
+            "colId": "a7dee143-3393-4266-8bc8-2b579650227d",
+            "containerId": "",
+            "name": "/persons/{id}",
+            "url": "{{base-path}}/persons/5",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-06-09T04:05:05.849Z",
+            "modified": "2024-06-09T04:05:05.849Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "preReq": {
+            "inlineScripts": [
+                {
+                    "script": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        "postReq": {
+            "inlineScripts": [
+                {
+                    "script": [
+                        ""
+                    ]
+                }
+            ]
+        }
+    },
+    "ref": "aX-r2rS8b3AKizLzPXeNGXhl0EPyodc1ratj_EH3IL3gRugzByrR0AYKaMIggDLIftuwjY1L9ZsfZcw6eF_t7Q"
+}
