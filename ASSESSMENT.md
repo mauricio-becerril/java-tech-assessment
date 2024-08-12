@@ -8,4 +8,4 @@ NOTE: There may be places where
 3. Implement `GET /persons/{id}` endpoint
 4. Implement `GET /persons/query` endpoint, this endpoint should accept `name` query parameter wich will be used to retrieve all the records by name
 5. Implement `PATCH /persons/{id}` endpoint
-6. Implement a unit test for `PersonModel` class
+6. Implement a unit test for `PersonService` class
